@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
+body {
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-image: url(../Assets/7971.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about{
+  background-color: #1c1c1d;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  height: 380px;
+  box-shadow:  5px 5px 68px #070708,
+             -5px -5px 68px #1d1d1e;
+}
+
+.about.what-i-do,
+.about.about-intro{
+  overflow-y: scroll;
+  scrollbar-color: rgba(255,255,255,0.5) #121212 ;
+  scrollbar-width: thin;
+}
+#name {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.about.personal-details ul li i {
+  border: 1px solid white;
+  background-color: black;
+  padding: 2px 5px;
+  margin: 0 4px;
+}
+
+.about.personal-details ul li {
+  text-align: left;
+  margin-bottom: 20px 20px;
+}
+
+h2 {
+  color: #fff16a;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+h3 {
+  text-decoration: underline;
+}
+.about.about-intro p,
+.about.what-i-do p {
+  line-height: 1.5;
+}
+.about.about-intro p{
+  padding : 20px 20px;
+}
+.about.personal-details ul{
+  list-style: none;
+}
+.about.personal-details li{
+  margin-bottom: 10px;
+}
+.dos{
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+background: #121213;
+box-shadow:  5px 5px 2px #0d0d0e,
+             -5px -5px 2px #171718;
+}
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about{
+    background-color: #121213;
+    grid-column: span 2;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    height: auto;
+  }
+  .about.what-i-do,
+  .about.about-intro{
+    overflow-y: hidden;
+  }
+}

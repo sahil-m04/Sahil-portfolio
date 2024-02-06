@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+body {
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-image: url(../Assets/7971.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin : 0 auto;
+}
+.certificate {
+    background-color: #1c1c1d;
+    padding: 15px;
+    border-radius: 16px;
+    height: 380px;
+    text-align: center;
+    box-shadow:  5px 5px 68px #070708,
+               -5px -5px 68px #1d1d1e; 
+}
+.certificate img{
+    width: 365px; 
+    height: 250px; 
+    border: 2px solid #535878;
+    border-radius: 8px;
+    cursor: pointer;
+}
+legend{
+    text-align: center;
+}
+@media (max-width:768px) {
+    .certificate-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .certificate{
+        height: auto;
+    }
+    .certificate img{
+        height: 200px;
+        width: 350px;
+    }
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+body {
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-image: url(../Assets/7971.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.certificates-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin : 0 auto;
+}
+.certificates-container{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.certificates {
+    background-color: #1c1c1d;
+    padding: 25px;
+    border-radius: 16px;
+    height: 380px;
+    overflow-y:scroll;
+    scrollbar-color: rgba(255,255,255,0.5) #121212 ;
+    scrollbar-width: thin;
+    text-align: center;
+    box-shadow:  5px 5px 68px #070708,
+               -5px -5px 68px #1d1d1e; 
+}
+.certificates img{
+    filter: blur(1px);
+    transition: filter 0.3s ease;
+    width: 300px; 
+    height: 200px; 
+    border: 2px solid #535878;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.certificates img:hover{
+    filter: none;
+}
+
+@media (max-width:768px) {
+    .certificates-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .certificates{
+        padding-bottom:30px;
+        overflow: hidden;
+    }
+    .certificates img{
+        height: 200px;
+        width: 350px;
+    }
+}
