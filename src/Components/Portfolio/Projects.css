@@ -29,10 +29,11 @@ body {
     background-color: #1c1c1d;
     padding: 25px;
     border-radius: 16px;
-    height: 380px;
+    height: 260px;
     overflow-y:scroll;
     scrollbar-color: rgba(255,255,255,0.5) #121212 ;
     scrollbar-width: thin;
+    scroll-behavior: smooth;
     text-align: center;
     box-shadow:  5px 5px 68px #070708,
                -5px -5px 68px #1d1d1e; 
